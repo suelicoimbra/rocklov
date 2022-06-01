@@ -1,0 +1,35 @@
+---
+- title: 'CT-API002: Fluxo alternativo - Senha Incorreta'
+  payload:
+    email: sueli@hotmail.com
+    password: '123'
+  code: 401
+  error: Unauthorized
+- title: 'CT-API003: Fluxo alternativo - Email não cadastrado'
+  payload:
+    email: sueli@hotmail.com
+    password: '123'
+  code: 401
+  error: Unauthorized
+- title: 'CT-API004: Fluxo alternativo - Campo Email com valor em branco'
+  payload:
+    email: ''
+    password: pwd123
+  code: 412
+  error: required email
+- title: 'CT-API005: Fluxo alternativo - Sem informar o campo Email'
+  payload:
+    password: '123'
+  code: 412
+  error: required email
+- title: 'CT-API006: Fluxo alternativo - Campo Senha com  valor em branco'
+  payload:
+    email: scoimbra@hotmail.com
+    password: ''
+  code: 412
+  error: required password
+- title: 'CT-API007: Fluxo alternativo - Sem informar o campo Senha'
+  payload:
+    email: scoimbra@hotmail.com
+  code: 412
+  error: required password
