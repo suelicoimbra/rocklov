@@ -8,7 +8,7 @@ describe "POST /sessions" do
     end
 
     it "Valida Status Code igual a 200" do
-      expect(@result.code).to eql 201 # estava 200 (alterei para simular erro)
+      expect(@result.code).to eql 200 
     end
 
     it "Valida id do usuário" do
